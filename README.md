@@ -1,4 +1,4 @@
- **# trojan-downloader**
+# Trojan-Downloader
 
 **⚠️ Disclaimer: This repository is for educational and research purposes only. It is illegal to use trojan-downloader software for malicious purposes. Use this software responsibly and ethically.**
 
