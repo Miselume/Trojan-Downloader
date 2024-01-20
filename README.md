@@ -3,8 +3,7 @@
 **⚠️ Disclaimer: This repository is for educational and research purposes only. It is illegal to use trojan-downloader software for malicious purposes. Use this software responsibly and ethically.**
 
 ## Overview
-
-This repository contains a sample implementation of a trojan-downloader, a type of malware that covertly downloads and executes additional malware on a victim's system. Unlike other trojan-downloaders this script not implemented another script for hiding to everyone can easily examine the script.
+This repository contains a sample application of a trojan downloader, a type of malware that surreptitiously downloads and runs additional malware on the victim's system. Unlike other trojan downloaders, this script is not integrated into another script for easy reading.
 
 ## Key Features
 
