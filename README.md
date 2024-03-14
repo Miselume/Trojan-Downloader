@@ -83,4 +83,4 @@ This project is licensed under the MIT License.
 For any questions or inquiries, please contact:
 
 Oguz Kayra Buyukyildirim
-oguzkairakun@gmail.com
+plumademiseria@protonmail.com
